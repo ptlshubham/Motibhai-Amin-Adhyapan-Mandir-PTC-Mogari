@@ -14,6 +14,7 @@ import { ScholarshipsComponent } from './scholarships/scholarships.component';
 import { SyllabusComponent } from './syllabus/syllabus.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { AcademicCalendarComponent } from './academic-calendar/academic-calendar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
@@ -33,6 +34,7 @@ import { AcademicCalendarComponent } from './academic-calendar/academic-calendar
     CommonModule,
     RouterModule.forChild(MoreRoutes),
     HomeModule,
+    NgbModule,
     NgxPaginationModule,
     SharedModule
   ],
