@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AboutComponent } from './about/about.component';
-import { CommitteeComponent } from './committee/committee.component';
 import { ContactComponent } from './contact/contact.component';
 import { TrustComponent } from './trust/trust.component';
 import { SharedModule } from '../shared/shared.module';
@@ -10,13 +9,14 @@ import { BasicRoutes } from './basic.routing';
 import { HomeModule } from '../home/home.module';
 import { InfrastructureComponent } from './infrastructure/infrastructure.component';
 import { ActivityComponent } from './activity/activity.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 
 @NgModule({
   declarations: [
     AboutComponent,
-    CommitteeComponent,
     ContactComponent,
     TrustComponent,
     InfrastructureComponent,
@@ -26,7 +26,10 @@ import { ActivityComponent } from './activity/activity.component';
     CommonModule,
     SharedModule,
     RouterModule.forChild(BasicRoutes),
-    HomeModule
+    HomeModule,
+    FormsModule,
+    NgbModule,
+    ReactiveFormsModule
 
   ]
 })
